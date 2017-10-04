@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://localhost">
+<head>
+    <title>Product List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>The current product list is: </p>
+    <p th:each="product : ${products}" th:text="${product}" />
+</body>
+</html>
